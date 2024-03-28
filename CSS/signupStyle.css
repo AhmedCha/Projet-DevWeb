@@ -1,6 +1,7 @@
-html{
+html {
     height: 100%;
 }
+
 body {
     font-family: Arial;
     background-color: #555;
@@ -64,17 +65,13 @@ nav ul li a:hover {
     align-items: center;
 }
 
-#nom {
-    height: 26px;
-    width: 250px;
-    font-size: 16px;
-    border-bottom: 1px solid;
-    border-right: 0px;
-    border-left: 0px;
-    border-top: 0px;
+.element{
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
 }
 
-#email {
+#nom, #email, #date, #password, #password2, #motSecret, #TmotSecret  {
     height: 26px;
     width: 250px;
     font-size: 16px;
@@ -82,69 +79,18 @@ nav ul li a:hover {
     border-right: 0px;
     border-left: 0px;
     border-top: 0px;
-}
-
-#date {
-    height: 26px;
-    width: 250px;
-    font-size: 16px;
-    border-bottom: 1px solid;
-    border-right: 0px;
-    border-left: 0px;
-    border-top: 0px;
+    margin-top: 5px;
 }
 
 #genreOP {
+    margin-top: 10px;
     margin-right: 40px;
-}
-
-#password {
-    height: 26px;
-    width: 250px;
-    font-size: 16px;
-    border-bottom: 1px solid;
-    border-right: 0px;
-    border-left: 0px;
-    border-top: 0px;
-}
-
-#password2 {
-    height: 26px;
-    width: 250px;
-    font-size: 16px;
-    border-bottom: 1px solid;
-    border-right: 0px;
-    border-left: 0px;
-    border-top: 0px;
-}
-
-#TmotSecret {
-    height: 26px;
-    width: 250px;
-    font-size: 16px;
-    border: 1px solid;
-    border-radius: 7px;
-    background-color: white;
-}
-
-#motSecret {
-    height: 26px;
-    width: 250px;
-    font-size: 16px;
-    border-bottom: 1px solid;
-    border-right: 0px;
-    border-left: 0px;
-    border-top: 0px;
 }
 
 #label {
     font-size: 20px;
     color: rgb(29, 16, 104);
     font-weight: bold;
-}
-
-br {
-    margin-top: 8px;
 }
 
 #reset {
@@ -168,6 +114,7 @@ br {
     float: right;
     margin-top: 20px;
 }
+
 footer {
     font-size: 16px;
     text-align: center;
