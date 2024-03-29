@@ -1,4 +1,4 @@
-let formulaire = document.getElementById("signup");
+let formulaire = document.getElementById("signupF");
 
 formulaire.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -122,15 +122,6 @@ formulaire.addEventListener("submit", function (event) {
         event.preventDefault();
     }
 
-})
-formulaire.addEventListener("reset", function (event) {
-    let nomErr = document.getElementById("nomErr");
-    let emailErr = document.getElementById("emailErr");
-    let genreErr = document.getElementById("genreErr");
-
-    nomErr.textContent = "";
-    emailErr.textContent = "";
-    genreErr.textContent = "";
 })
 
 formulaire.addEventListener("reset", function (event) {

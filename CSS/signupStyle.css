@@ -47,7 +47,7 @@ nav ul li a:hover {
     float: right;
 }
 
-#login {
+#signup {
     padding: 30px;
     border: 5px solid rgb(119, 178, 255);
     border-radius: 25px;
@@ -98,7 +98,7 @@ nav ul li a:hover {
     color: white;
     border: 1px transparent;
     border-radius: 10px;
-    height: 30px;
+    height: 36px;
     width: 100px;
     float: left;
     margin-top: 20px;
@@ -109,7 +109,7 @@ nav ul li a:hover {
     color: white;
     border: 1px transparent;
     border-radius: 10px;
-    height: 30px;
+    height: 36px;
     width: 100px;
     float: right;
     margin-top: 20px;
