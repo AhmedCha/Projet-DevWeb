@@ -1,0 +1,134 @@
+body {
+    font-family: Arial;
+    background-color: #555;
+    margin: 0;
+    padding: 0;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Header et navbar*/
+header {
+    background-color: #333;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#accueilpropos {
+    float: left;
+}
+
+#loginsignup {
+    float: right;
+    margin-right: 25px;
+}
+
+/*Contenue de body*/
+.content {
+    margin: auto;
+    margin-top: 75px;
+    width: 100%;
+}
+
+h2 {
+    color: #fff;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+p {
+    color: #fff;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.img1 {
+    max-height: 100%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-self: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cta-btn1 {
+    text-decoration: none;
+    background-color: rgb(89, 86, 255);
+    color: white;
+    border: 1px transparent;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+.cta-btn2 {
+    text-decoration: none;
+    background-color: rgb(89, 86, 255);
+    color: white;
+    border: 1px transparent;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+footer {
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    background-color: #333;
+    width: 100%;
+    margin-top: auto;
+}
+
+input:focus {
+    outline: none;
+}
