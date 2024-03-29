@@ -36,8 +36,9 @@ formulaire.addEventListener("submit", function (event) {
         alert("Log in avec succes!");
     }
 
-})
-formulaire.addEventListener("mdpo", function (event) {
+});
+let mdpoButton = document.getElementById("mdpo");
+mdpoButton.addEventListener("click", function (event) {
     event.preventDefault();
-    alert("Cette fonctionnalite n'est pas disponnible maintenant :(");
-})
+    alert("Cette fonctionnalite n'est pas disponible maintenant :(");
+});
