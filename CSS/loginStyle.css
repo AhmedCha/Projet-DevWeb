@@ -14,6 +14,37 @@ header {
     padding: 20px;
 }
 
+header h1 {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 5%;
+    color: #ffffff;
+    text-align: start;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;

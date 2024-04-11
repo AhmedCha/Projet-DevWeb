@@ -15,6 +15,7 @@ header {
     padding: 20px;
     position: fixed;
     width: 100%;
+    z-index: 2;
 }
 
 header h1 {
@@ -22,7 +23,7 @@ header h1 {
     padding: 0;
     margin: 0;
     margin-left: 5%;
-    color: #fff;
+    color: #ffffff;
     text-align: start;
 }
 
@@ -30,6 +31,8 @@ header ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    float: right;
+    margin-right: 25px;
 }
 
 header ul li {
@@ -52,125 +55,133 @@ nav {
     width: 100%;
     margin-top: 78px;
     position: fixed;
-    background-color: #f4f4f4;
+    background-color: #707070;
     padding: 10px 0;
     text-align: center;
+    z-index: 2;
 }
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: #ffe0e0;
     padding: 10px 20px;
 }
 
-#accueilpropos {
-    float: left;
+/* container styling */
+.break {
+    margin-top: 60px;
 }
 
-#loginsignup {
-    float: right;
-    margin-right: 25px;
-}
-
-/* Content styling */
-.break{
-    margin-top: 120px;
-}
-
-.content {
-    border: 0px solid black;
-    border-radius: 20px;
-    background-color: rgba(51, 0, 0, 0.212);
-    margin: 0px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+section {
+    padding: 20px;
     max-width: 1080px;
+    width: calc(100% - 40px);
+}
+
+#home .container {
+    background-image: url('../src/26047.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    min-height: 400px;
+    border: 0;
+    background-color: rgb(24, 26, 27);
+}
+
+#home .container p {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.container {
+    border: 5px solid rgb(119, 178, 255);
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
     align-items: center;
+    padding: 20px;
+    width: calc(100% - 50px);
 }
 
-.bloc {
-    width: fit-content;
+#pricing .container {
+    padding: 0;
+    border: 0px solid black;
 }
 
-h2,
-h3,
-p,
-ol,
-ul {
-    margin: 0 30px 20px;
-    color: #fff;
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.img1 img {
-    max-width: 100%;
+.ul li {
+    margin-bottom: 5px;
+    /* Add some space between list items */
+    padding-left: 20px;
+    /* Space for the icon */
+    background: url('../src/bullet-point.png') left center no-repeat;
+    /* Set the image as background */
+    background-size: 16px;
+    /* Adjust size of the icon */
+    line-height: 20px;
+    /* Center the text vertically */
+}
+
+.container ul li {
+    font-size: 20px;
+    margin-top: 12px;
+}
+
+.container p {
+    font-size: 22px;
+    margin-top: 12px;
+}
+
+h3 {
+    color: #998aed;
+}
+
+h2 {
+    color: rgb(29, 16, 104);
+    font-size: 36px;
+}
+
+p {
+    color: #000000;
+}
+
+.pricing-tier ul {
+    color: #ffffff;
+}
+
+
+.pricing-tier {
+    border-radius: 10px;
+    background-color: #333;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+    float: left;
+    margin: 0 20px 5px 20px;
     height: auto;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
-@media screen and (max-width: 767px) {
-    .content {
-        display: flex;
-        flex-direction: column;
-        flex: auto;
-        padding: 0 50px 0 50px;
-    }
-
-    .bloc,
-    .img1 {
-        max-width: 90%;
-        width: auto;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .content {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0 50px 0 50px;
-    }
-
-    .bloc {
-        min-width: 334px;
-        width: calc(90% - 250px);
-        float: left;
-    }
-
-    .img1 {
-        max-width: 436px;
-        width: calc(10% + 250px);
-        float: left;
-    }
-}
-
-/* Button styles */
-.btn {
-    max-width: fit-content;
-    text-decoration: none;
-    background-color: rgb(89, 86, 255);
+.pricing-tier p {
     color: white;
-    border: 1px transparent;
-    border-radius: 10px;
-    padding: 10px 20px;
-    margin: 20px 50px 30px 20%;
-    margin-left: 10px;
-}
-
-
-.btn:hover {
-    background-color: rgb(63, 62, 173);
 }
 
 /* Footer */
 footer {
     font-size: 16px;
     text-align: center;
-    color: white;
     padding: 10px 0;
     background-color: #333;
     width: 100%;
     margin: auto;
+}
+
+footer p {
+    color: rgb(255, 255, 255);
 }
 
 input:focus {
