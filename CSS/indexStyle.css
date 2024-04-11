@@ -97,7 +97,7 @@ section {
 .container {
     border: 5px solid rgb(119, 178, 255);
     border-radius: 25px;
-    background-color: rgb(204, 204, 204);
+    background-color: white;
     align-items: center;
     padding: 20px;
     width: calc(100% - 50px);
