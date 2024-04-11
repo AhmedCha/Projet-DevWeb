@@ -103,6 +103,9 @@ nav ul li a:hover {
     float: left;
     margin-top: 20px;
 }
+#reset:hover{    
+    background-color: rgb(63, 62, 173);
+}
 
 #submit {
     background-color: rgb(89, 86, 255);
@@ -113,6 +116,9 @@ nav ul li a:hover {
     width: 100px;
     float: right;
     margin-top: 20px;
+}
+#submit:hover{    
+    background-color: rgb(63, 62, 173);
 }
 
 footer {

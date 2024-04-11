@@ -91,6 +91,9 @@ br {
     float: left;
     margin-top: 20px;
 }
+#mdpo:hover{    
+    background-color: rgb(63, 62, 173);
+}
 
 #submit {
     background-color: rgb(89, 86, 255);
@@ -102,6 +105,11 @@ br {
     float: right;
     margin-top: 20px;
 }
+#submit:hover{    
+    background-color: rgb(63, 62, 173);
+}
+
+
 
 footer {
     font-size: 16px;

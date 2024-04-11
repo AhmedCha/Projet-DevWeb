@@ -3,13 +3,13 @@ body {
     background-color: #555;
     margin: 0;
     padding: 0;
-
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-/*Header et navbar*/
+/* Header and navbar */
 header {
     background-color: #333;
     padding: 20px;
@@ -17,25 +17,50 @@ header {
     width: 100%;
 }
 
-nav ul {
+header h1 {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 5%;
+    color: #fff;
+    text-align: start;
+}
+
+header ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-nav ul li {
+header ul li {
     display: inline;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
-nav ul li a {
+header ul li a {
     color: #fff;
     text-decoration: none;
 }
 
-nav ul li a:hover {
+header ul li a:hover {
     text-decoration: underline;
+}
+
+
+nav {
+    width: 100%;
+    margin-top: 78px;
+    position: fixed;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
 }
 
 #accueilpropos {
@@ -47,78 +72,97 @@ nav ul li a:hover {
     margin-right: 25px;
 }
 
-/*Contenue de body*/
+/* Content styling */
+.break{
+    margin-top: 120px;
+}
+
 .content {
-    margin: auto;
-    margin-top: 75px;
-    width: 100%;
+    border: 0px solid black;
+    border-radius: 20px;
+    background-color: rgba(51, 0, 0, 0.212);
+    margin: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 1080px;
+    align-items: center;
 }
 
-h2 {
+.bloc {
+    width: fit-content;
+}
+
+h2,
+h3,
+p,
+ol,
+ul {
+    margin: 0 30px 20px;
     color: #fff;
-    padding-left: 50px;
-    padding-right: 50px;
 }
 
-p {
-    color: #fff;
-    padding-left: 50px;
-    padding-right: 50px;
+.img1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.img1 {
-    max-height: 100%;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    align-self: center;
+@media screen and (max-width: 767px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        flex: auto;
+        padding: 0 50px 0 50px;
+    }
+
+    .bloc,
+    .img1 {
+        max-width: 90%;
+        width: auto;
+    }
 }
 
+@media screen and (min-width: 768px) {
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 50px 0 50px;
+    }
 
+    .bloc {
+        min-width: 334px;
+        width: calc(90% - 250px);
+        float: left;
+    }
 
+    .img1 {
+        max-width: 436px;
+        width: calc(10% + 250px);
+        float: left;
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-.cta-btn1 {
+/* Button styles */
+.btn {
+    max-width: fit-content;
     text-decoration: none;
     background-color: rgb(89, 86, 255);
     color: white;
     border: 1px transparent;
     border-radius: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
-    float: left;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    margin-left: 50px;
+    padding: 10px 20px;
+    margin: 20px 50px 30px 20%;
+    margin-left: 10px;
 }
 
-.cta-btn2 {
-    text-decoration: none;
-    background-color: rgb(89, 86, 255);
-    color: white;
-    border: 1px transparent;
-    border-radius: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
-    float: left;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    margin-left: 50px;
+
+.btn:hover {
+    background-color: rgb(63, 62, 173);
 }
 
+/* Footer */
 footer {
     font-size: 16px;
     text-align: center;
@@ -126,7 +170,7 @@ footer {
     padding: 10px 0;
     background-color: #333;
     width: 100%;
-    margin-top: auto;
+    margin: auto;
 }
 
 input:focus {

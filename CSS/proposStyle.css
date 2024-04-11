@@ -1,0 +1,129 @@
+body {
+    font-family: Arial;
+    background-color: #555;
+    margin: 0;
+    padding: 0;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Header et navbar*/
+header {
+    background-color: #333;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#accueilpropos {
+    float: left;
+}
+
+#loginsignup {
+    float: right;
+    margin-right: 25px;
+}
+
+/*Contenue de body*/
+.break{
+    margin-top: 75px;
+}
+.content {
+    border-bottom: 2px solid black;
+    margin: auto;
+    width: 100%;
+}
+
+h2 {
+    font-size: 26px;
+    margin-right: 15%;
+    margin-left: 15%;
+    color: #fff;
+}
+
+p {
+    font-size: 16px;
+    margin-right: 15%;
+    margin-left: 15%;
+    color: #fff;
+}
+
+.unlist {
+    margin-right: 15%;
+    margin-left: 15%;
+    color: #fff;
+}
+
+.img1 {
+    max-height: 100vh;
+    max-width: 70vw;
+    margin-left: 15%;
+    margin-right: 15%;
+    align-self: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn {
+    text-decoration: none;
+    background-color: rgb(89, 86, 255);
+    color: white;
+    border: 1px transparent;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 40%;
+}
+
+footer {
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    background-color: #333;
+    width: 100%;
+    margin-top: auto;
+}
+
+input:focus {
+    outline: none;
+}
