@@ -23,7 +23,7 @@ header h1 {
     padding: 0;
     margin: 0;
     margin-left: 5%;
-    color: #ffffff;
+    color: rgb(119, 178, 255);
     text-align: start;
 }
 
@@ -63,7 +63,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #ffe0e0;
+    color: #a8e3fa;
     padding: 10px 20px;
 }
 
@@ -90,14 +90,14 @@ section {
 
 #home .container p {
     font-size: 30px;
-    color: rgb(255, 255, 255);
+    color: rgb(216, 216, 216);
     font-weight: bold;
 }
 
 .container {
     border: 5px solid rgb(119, 178, 255);
     border-radius: 25px;
-    background-color: white;
+    background-color: rgb(209, 209, 209);
     align-items: center;
     padding: 20px;
     width: calc(100% - 50px);
@@ -142,7 +142,7 @@ h3 {
 }
 
 h2 {
-    color: rgb(29, 16, 104);
+    color: rgb(119, 178, 255);
     font-size: 36px;
 }
 
