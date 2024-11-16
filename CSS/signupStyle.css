@@ -81,7 +81,7 @@ header ul li a:hover {
     flex-direction: column;
 }
 
-#nom, #email, #date, #password, #password2, #motSecret, #TmotSecret  {
+#nom, #email, #birth, #password, #password2, #motSecret, #TmotSecret  {
     height: 26px;
     width: 250px;
     font-size: 16px;

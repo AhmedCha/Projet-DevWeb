@@ -11,9 +11,20 @@
 <body>
     <header>
         <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li id="signupH"><a href="login.html">Connexion</a></li>
-            <li id="loginH"><a href="signup.html">Inscription</a></li>
+            <li><a href="index.php">Accueil</a></li>
+            <?php
+            // Check if the user is logged in
+            session_start();
+            if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
+                // User is logged in
+                echo '<li id="modifyH"><a href="modifier.php">Modifier</a></li>';
+                echo '<li id="logoutH"><a href="traitement_deconnexion.php">Déconnexion</a></li>';
+            } else {
+                // User is not logged in
+                echo '<li id="loginH"><a href="login.php">Connexion</a></li>';
+                echo '<li id="signupH"><a href="signup.php">Inscription</a></li>';
+            }
+            ?>
         </ul>
         <h1>NexGenHost</h1>
     </header>
@@ -37,7 +48,7 @@
     </div>
 
     <section id="home">
-        
+
         <h2>Bienvenue chez NexGenHost!</h2>
         <div class="container">
             <p>Nous sommes heureux de vous accueillir sur notre service d'hébergement de serveurs NexGenHost. Chez nous,

@@ -1,0 +1,158 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial;
+    background-color: #555;
+    margin: 0;
+    padding: 0;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+}
+
+header h1 {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 5%;
+    color: rgb(119, 178, 255);
+    text-align: start;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+#accueilpropos {
+    float: left;
+}
+
+#loginsignup {
+    float: right;
+}
+
+#signup {
+    padding: 30px;
+    border: 5px solid rgb(119, 178, 255);
+    border-radius: 25px;
+    background-color: white;
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: min-content;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.element{
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+}
+#email{
+    height: 26px;
+    width: 250px;
+    font-size: 16px;
+    border-bottom: 1px solid;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+    background-color: #aaa;
+    margin-top: 5px;
+    padding: 2px;
+
+}
+#nom, #birth, #password, #password2, #motSecret, #TmotSecret  {
+    height: 26px;
+    width: 250px;
+    font-size: 16px;
+    border-bottom: 1px solid;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+    margin-top: 5px;
+}
+
+#genreOP {
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+#label {
+    font-size: 20px;
+    color: rgb(29, 16, 104);
+    font-weight: bold;
+}
+
+#reset {
+    background-color: rgb(89, 86, 255);
+    color: white;
+    border: 1px transparent;
+    border-radius: 10px;
+    height: 36px;
+    width: 100px;
+    float: left;
+    margin-top: 20px;
+}
+#reset:hover{    
+    background-color: rgb(63, 62, 173);
+}
+
+#submit {
+    background-color: rgb(89, 86, 255);
+    color: white;
+    border: 1px transparent;
+    border-radius: 10px;
+    height: 36px;
+    width: 100px;
+    float: right;
+    margin-top: 20px;
+}
+#submit:hover{    
+    background-color: rgb(63, 62, 173);
+}
+
+footer {
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    background-color: #333;
+    width: 100%;
+    margin-top: auto;
+}
+
+input:focus {
+    outline: none;
+}
